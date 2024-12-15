@@ -1,0 +1,84 @@
+1. The Matrix (1999)
+
+    Pourquoi c'est utile : Dans The Matrix, le protagoniste découvre que le monde dans lequel il vit est une 
+    simulation créée par des machines. Un concept clé est la recherche de la vérité cachée, qui pourrait être 
+    liée à des fichiers cachés dans votre projet. Vous pourriez intégrer des fichiers texte représentant des 
+    codes de la matrice, des enregistrements audio de discussions entre les personnages, et des vidéos montrant 
+    les découvertes et les événements dans le monde virtuel.
+
+    Exploration possible : L'exploration pourrait inclure la recherche dans des systèmes de fichiers où des 
+    indices sont laissés par les résistants ou par des personnages comme Morpheus. Les utilisateurs pourraient 
+    découvrir des fichiers cachés qui révèlent des informations critiques sur la simulation.
+
+
+    Pour la vidéo on met la scene on il decouvre la matrice : https://www.youtube.com/watch?v=guS1Bc6QPGI
+
+    + scene de combat confu apprentissage
+
+
+    - Fichier contenant du code de la matrice 
+    - Journal de bord de Morpheus
+    - Fichier audio : Conversations entre Morpheus et Neo pilule 
+    - Visuels de la résistance : mages montrant des membres de la résistance 
+    - Log de connexion / déconnexion
+    - Fichiers de débogage : Des rapports générés par les machines pour résoudre des problèmes internes d
+      ans la simulation. L’utilisateur pourrait être amené à explorer ces logs pour découvrir des failles 
+      ou des erreurs dans le système 
+      qui pourraient être exploitées pour s’échapper.
+      Exemple de contenu : "Erreur système #503 : Échec de la synchronisation des données. 
+      Tentative de réinitialisation en cours."
+    - Ordres de mission de la résistance : Des documents contenant des détails sur des missions secrètes, des attaques 
+    contre les machines ou des missions de sauvetage de personnes coincées dans la Matrice.
+      Exemple de contenu : "Mission #349 : Extraire l'agent infiltré de la Matrice. 
+      Objectif : récupérer les données sur le dernier fichier de contrôle."
+
+Fichier cachée (clé pour sortir de la Matrice) : Un fichier crucial contenant un mot de passe, un code ou une clé nécessaire pour activer un "déconnecteur" ou un autre programme pour sortir de la simulation.
+
+    - Fichier de l'origine de la Matrice : Un fichier qui raconte comment la Matrice a été créée et pourquoi elle a pris une telle ampleur. 
+    Ce fichier pourrait être extrêmement difficile à trouver, caché dans un recoin du système.
+    Exemple de contenu : "La Matrice a été créée pour sauver l'humanité... mais nous avons rapidement perdu le contrôle.
+    La réalité est devenue une illusion."
+
+Le truc quand a fouille dans un les log dans un des fichier on a quelque chose d'écrit en claire , qui donne le nom d'un fichier , 
+le seul moyen de le trouver le fichier c'est de le cherche dans un la bare de recherche . 
+Ce texte permet de dechirer les documents ( il faut donc dechicrer les autre log ) dans un document on poura avoir le nom d'un autre fichier 
+dans ce fichier on a le mot de passe et le login 
+
+Dossier Mon Journal de Bord:
+    - Jours 1
+    - Jours 2
+    - Jours 3
+    - Jours 4
+    - Jours 5
+    - Jours 6
+Dossier La matrice:
+    - Vidéo 1
+    - Vidéo 2
+    Dossier Reseau :
+        Dossier Log :
+        - Log 1
+        - Log 2
+        - Log 3
+        - Log 4
+        - Log 5
+        - Log 6
+        Dossier Fichiers de débogage : 
+        - debug_system.log : Contient les journaux de maintenance régulière de la Matrice, avec des lignes suspectes indiquant des anomalies non résolues.
+        - error_report_critical_neo-503.log : Un rapport détaillant une erreur critique liée à l'apparition de Neo comme "anomalie".
+        - matrix_core_dump-2312.hex : Un fichier de vidage mémoire provenant d’un plantage de l’un des systèmes centraux. Il contient des fragments cryptés qui pourraient révéler la vérité sur la Matrice.
+        - system_restart_042_morpheus.trc : Trace d'un redémarrage après une anomalie provoquée par les résistants. Peut inclure des détails sur leur intrusion.
+        - machine_interface_protocol.log : Journal de la communication entre les machines conscientes. Ce fichier montre comment elles interagissent pour maintenir la Matrice.
+        - security_failures_76_agent_smith.log :Un fichier documentant les échecs des Agents à contenir l'anomalie, ce qui laisse entendre des failles dans leur contrôle.
+        - user_activity_red_pill-040.xml : Fichier contenant les activités des utilisateurs marqués comme des anomalies (les résistants qui ont pris la pilule rouge)
+        - error_code_101_trinity_access.log : Rapport indiquant une tentative réussie de Trinity pour pirater l’un des sous-systèmes de la Matrice.
+        - glitch_déjà_vu_003.json : Un fichier listant des incidents de "déjà-vu" provoqués par des changements dans la Matrice (comme le célèbre chat noir). Il montre des manipulations en cours dans la simulation.
+        - architect_core_interface.log : Journal des interactions entre l'Architecte et les autres programmes de la Matrice. Inclut des notes cryptées sur les cycles précédents de destruction et de recréation de la Matrice.
+    Dossier Mission :
+    - Fichier 1
+    - Fichier 2
+    - Fichier 3
+    - Fichier 4
+    - Fichier 5
+    - Fichier 6
+
+

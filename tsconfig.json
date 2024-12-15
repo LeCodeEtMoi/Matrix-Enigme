@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",                        // Assure la prise en charge des fonctionnalités modernes
+    "module": "ESNext",                        // Utilise les modules modernes
+    "lib": ["DOM", "ES2020"],                  // Inclut DOM et ES2020 pour Promise, String.endsWith, etc.
+    "esModuleInterop": true,                   // Facilite l'importation des modules CommonJS
+    "skipLibCheck": true,                      // Ignore les vérifications des types des dépendances
+    "strict": true,                            // Active les vérifications strictes
+    "outDir": "dist",                          // Dossier pour les fichiers compilés
+    "rootDir": "src",                          // Dossier source
+    "forceConsistentCasingInFileNames": true   // Vérifie la casse dans les noms de fichiers
+  },
+  "include": ["src/**/*"],                     // Inclut tous les fichiers dans le dossier "src"
+  "exclude": ["node_modules", "dist"]          // Exclut les dépendances et les fichiers compilés
+}

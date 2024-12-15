@@ -1,0 +1,311 @@
+
+
+
+/* style.css */
+:root {
+    --main-bg-color: #282A36;
+    --main-fg-color: #f8f8f2 ;
+    --main-primary-color: #44475a;
+    --main-secondary-color: #6272a4 ;
+    --main-color-green:#50fa7b ;
+    --main-width-body: 50%;
+    --main-width-file: calc(100% - var(--main-width-body));
+    
+
+
+  }
+
+  
+body {
+    font-family: 'Arial', sans-serif;
+    background: var(--main-bg-color);
+    color: var(--main-fg-color);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  /* Explorer container */
+  #explorer {
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid var(--main-primary-color);
+    border-radius: 8px;
+    overflow: hidden;
+    width: var(--main-width-body);
+    margin:10px;
+  }
+  
+  /* Header */
+  .explorer-header {
+    background: var(--main-secondary-color);
+    color: var(--main-fg-color);
+    padding: 2px;
+    text-align: center;
+    font-size: 0.7rem;
+  }
+  
+  .file, .folder{    
+    padding: 1rem;
+  }
+  
+
+  .file img, .folder img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 5px;
+    
+    
+  }
+  
+  .file:hover, .folder:hover {
+    
+    transform: scale(1.01);
+    box-shadow: 0 0 10px var(--main-secondary-color);
+  }
+  
+  /* Modal styles */
+  #modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  .modal-content {
+    background: #121212;
+    border: 2px solid #00ffff;
+    padding: 20px;
+    width: 300px;
+    color: #e0e0e0;
+    text-align: center;
+    border-radius: 8px;
+  }
+  
+  #modal-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #e0e0e0;
+  }
+/* Add a back button */
+.back-button {
+    display: inline-block;
+    margin-bottom: 10px;
+    padding: 5px 10px;
+    background: #00ffff;
+    color: #121212;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .back-button:hover {
+    background: #00cccc;
+  }
+    
+/* Style pour les fichiers */
+.file {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    color: var(--main-fg-color);
+    background-color: var(--main-primary-color);
+    transition: background-color 0.2s ease-in-out;
+    cursor: pointer;
+  }
+    
+  /* Conteneur des icônes */
+  .file .icon {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  svg{
+    width: 1%;
+    color:var(--main-fg-color);
+  }
+
+  #file-content {
+    padding: 10px;
+    margin:10px;
+    width: var(--main-width-file);
+    margin-top: 20px;
+    
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  
+  #content-display {
+    white-space: pre-wrap; /* Conserve les sauts de ligne et les espaces */
+    color: var(--main-fg-color);
+  }
+  
+
+/* Conteneur principal du lecteur */
+.player {
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    color: white;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Zone d'affichage de la chanson */
+  #current-song {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  /* Boutons de contrôle */
+  .controls {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 10px;
+  }
+  
+  .controls button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .controls button:hover {
+    background-color: #444;
+  }
+  
+  /* Barre de progression */
+  .progress-container {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  
+  #progress-bar {
+    width: 100%;
+    height: 8px;
+    background-color: #333;
+    border-radius: 5px;
+    -webkit-appearance: none;
+    appearance: none;
+  }
+  
+  #progress-bar::-webkit-slider-runnable-track {
+    background-color: #666;
+    height: 8px;
+    border-radius: 5px;
+  }
+  
+  #progress-bar::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    background-color: #00bcd4;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  #progress-bar:focus {
+    outline: none;
+  }
+  
+  /* Contrôle du volume */
+  .volume-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 15px;
+  }
+  
+  #volume-control {
+    width: 100%;
+    height: 8px;
+    background-color: #333;
+    border-radius: 5px;
+    -webkit-appearance: none;
+    appearance: none;
+  }
+  
+  #volume-control::-webkit-slider-runnable-track {
+    background-color: #666;
+    height: 8px;
+    border-radius: 5px;
+  }
+  
+  #volume-control::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    background-color: #00bcd4;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  /* Canvas pour le spectre */
+  #audio-visualizer {
+    width: 100%;
+    height: 100px;
+    background-color: #333;
+    border-radius: 10px;
+    margin-top: 15px;
+  }
+  
+  /* Petite touche pour améliorer l'aspect visuel */
+  .controls button:focus {
+    outline: none;
+  }
+  
+  .volume-container label {
+    font-size: 14px;
+  }
+
+  .invisible {
+    display: none;
+  }
+  
+  .visible {
+    display: block;
+  }
+  
+  ul {
+    list-style: none;
+    padding-left: 20px; /* Décalage visuel pour les sous-dossiers */
+  }
+  
+  .dossier > span {
+    font-weight: bold;
+    cursor: pointer;
+  }
+  

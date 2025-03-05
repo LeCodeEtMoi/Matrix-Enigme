@@ -13,7 +13,7 @@
 
     Pour la vidéo on met la scene on il decouvre la matrice : https://www.youtube.com/watch?v=guS1Bc6QPGI
 
-    + scene de combat confu apprentissage
+        + scene de combat confu apprentissage
 
 
     - Fichier contenant du code de la matrice 

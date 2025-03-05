@@ -30,12 +30,13 @@ body {
   
   /* Explorer container */
   #explorer {
-    background: rgba(255, 255, 255, 0.1);
+    background-color: var(--main-primary-color);
     border: 2px solid var(--main-primary-color);
     border-radius: 8px;
     overflow: hidden;
     width: var(--main-width-body);
     margin:10px;
+    z-index: 1;
   }
   
   /* Header */
@@ -149,7 +150,7 @@ body {
     margin:10px;
     width: var(--main-width-file);
     margin-top: 20px;
-    
+    background-color: var(--main-bg-color);
     border: 1px solid #ccc;
     border-radius: 5px;
     font-family: 'Courier New', Courier, monospace;
@@ -299,13 +300,38 @@ body {
     display: block;
   }
   
-  ul {
-    list-style: none;
-    padding-left: 20px; /* Décalage visuel pour les sous-dossiers */
+  li.dossier {
+    list-style-type: square;
+    padding: 10px;
+    margin:10px; /* Ajoute de l'espace pour l'icône */
+  }
+    
+
+  li.dossier ul {
+    list-style-type: square;
   }
   
+  .file.clicked {
+    border:3px solid var(--main-secondary-color);        /* Change la couleur du texte au clic */
+    margin: 1rem;
+}
+
   .dossier > span {
     font-weight: bold;
     cursor: pointer;
   }
   
+
+  form .info_search {
+    padding:1rem;
+    margin: 1rem;
+  }
+  .matrix {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+  }
